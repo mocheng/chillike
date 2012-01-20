@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Y!Search</title>
+    <!--
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+    -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
+    <!-- enable full-screen mode -->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <!-- controls the appearance of the status bar in full-screen mode -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <!-- custom home screen icon -->
+    <link rel="apple-touch-icon" href="slices/search.png" />
+
+    <style type="text/css" media="screen">
+        body {
+            display: none;
+        }
+    </style>
+
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" charset="utf-8">
+    <link rel="stylesheet" href="style_2x.css" type="text/css" media="only screen and (-webkit-min-device-pixel-ratio:2)" charset="utf-8">
+
+    <!--
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/combo?3.4.1/build/cssgrids/cssgrids-min.css&3.4.1/build/cssreset/cssreset-min.css&3.4.1/build/cssfonts/cssfonts-min.css&3.4.1/build/cssbase/cssbase-min.css">
+    <script src="http://yui.yahooapis.com/3.4.1/build/yui/yui-min.js"></script>
+    -->
+
+</head>
+<!--
+<body onload="/mobile/i.test(navigator.userAgent) && !location.hash && setTimeout(function () { if (!pageYOffset) window.scrollTo(0, 1); }, 1000); ">
+    -->
+
+<body class="app-mode">
+<body>
+    <div id="search-pane" class="search-pane">
+        <span id="back_to_tile" class="icon search">Back</span>
+        <div id="conv-view" class="conv-view">
+            <div id="scroll-content" class="scroll-content">
+                <ul id="conv-list">
+                </ul>
+            </div>
+        </div>
+        <div id="bot-bar" class="bot-bar">
+            <span id="icon-text" class="icon icon-text"></span>
+            <span id="icon-voice" class="icon icon-voice"></span>
+            <span id="icon-photo" class="icon icon-photo"></span>
+        </div>
+    </div>
+    <div id="tile-pane" class="tile-pane">
+        <span id="search" class="icon search">Search</span>
+        <div id="location" class="location">
+            <span id="curr_loc" class="subject"></span>
+            <div id="map" class="map">
+                <div class="close"></div>
+                <ul id="promotion" class="promotion">
+                    <li><span class="shop"><img src="slices/maps/1.png" width="66" height="66"></span></li>
+                    <li><span class="shop"><img src="slices/maps/2.png" width="66" height="66"></span></li>
+                    <li><span class="shop"><img src="slices/maps/3.png" width="66" height="66"></span></li>
+                    <li><span class="shop"><img src="slices/maps/4.png" width="66" height="66"></span></li>
+                    <li><span class="shop"><img src="slices/maps/5.png" width="66" height="66"></span></li>
+                    <li><span class="shop"><img src="slices/maps/6.png" width="66" height="66"></span></li>
+                    <li><span class="shop"><img src="slices/maps/7.png" width="66" height="66"></span></li>
+                </ul>
+                <div class="curr_shop hidden">
+                    <img src="slices/maps/4-enlarge.png" width="305" height="309">
+                </div>
+
+            </div>
+        </div>
+        <div id="tile-weather" class="tile small-tile tile1 tile-weather">
+            <!--Weather-->
+        </div>
+        <div id="tile-email" class="tile small-tile tile2 tile-email">
+            <!--EMail-->
+        </div>
+        <div id="tile-twitter" class="tile small-tile tile4 tile-twitter">
+            <!--Twitter-->
+        </div>
+        <div id="tile-facebook" class="tile small-tile tile3 tile-facebook">
+            <!--Facebook-->
+        </div>
+        <div id="tile-push-info" class="tile big-tile tile5 tile-push-info">
+            <!--New Arrival-->
+        </div>
+    </div>
+
+<script src="iscroll.js" type="text/javascript" charset="utf-8"></script>
+<script src="zepto.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="search.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+</html>
